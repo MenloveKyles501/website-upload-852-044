@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索-亚洲精选视频-精选视频片单-高清视频在线播放</title>
+  <meta name="description" content="搜索亚洲精选视频片单，快速查找高清视频在线播放内容。">
+  <meta name="keywords" content="亚洲精选视频,精选视频片单,高清视频在线播放,亚洲视频精选,视频片单,热门视频">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="亚洲精选视频">
+        <span class="brand-mark" aria-hidden="true">▶</span>
+        <span class="brand-text">亚洲精选视频</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link " href="index.html">首页</a>
+        <a class="nav-link " href="categories.html">分类</a>
+        <a class="nav-link " href="ranking.html">排行榜</a>
+        <a class="nav-link " href="all.html">全部影片</a>
+      </nav>
+      <form class="header-search" action="search.html" method="get" data-search-form>
+        <label class="sr-only" for="header-search-search">搜索视频</label>
+        <input id="header-search-search" type="search" name="q" placeholder="搜索视频..." autocomplete="off">
+        <button type="submit" aria-label="提交搜索">⌕</button>
+      </form>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开移动导航">☰</button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+      <form class="mobile-search" action="search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索视频..." autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+        <a class="mobile-link " href="index.html">首页</a>
+        <a class="mobile-link " href="categories.html">分类</a>
+        <a class="mobile-link " href="ranking.html">排行榜</a>
+        <a class="mobile-link " href="all.html">全部影片</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-hero small-hero">
+      <span class="eyebrow">站内搜索</span>
+      <h1>搜索精选视频</h1>
+      <p>输入片名、分类、地区、年份、标签或剧情关键词，快速进入对应详情页。</p>
+    </section>
+    <section class="content-section search-section">
+      <form class="search-page-form" action="search.html" method="get" data-search-page-form>
+        <input type="search" name="q" placeholder="搜索视频..." autocomplete="off" data-search-page-input>
+        <button class="btn btn-primary" type="submit">搜索</button>
+      </form>
+      <div class="filter-panel" data-filter-panel>
+        <label class="filter-search">
+          关键词
+          <input type="search" placeholder="输入片名、地区、类型或标签" data-filter-keyword>
+        </label>
+        <div class="filter-controls">
+          <label>
+            类型
+            <select data-filter-type>
+              <option value="">全部类型</option>
+              <option value="电影">电影</option>
+              <option value="剧集">剧集</option>
+              <option value="电视剧">电视剧</option>
+            </select>
+          </label>
+          <label>
+            年份
+            <select data-filter-year>
+              <option value="">全部年份</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+            </select>
+          </label>
+          <label>
+            分类
+            <select data-filter-category>
+              <option value="">全部分类</option>
+            <option value="romance">爱情剧</option>
+            <option value="fantasy">奇幻玄幻</option>
+            <option value="suspense">悬疑惊悚</option>
+            <option value="crime">犯罪片</option>
+            <option value="history">古装历史</option>
+            <option value="action">动作冒险</option>
+            <option value="comedy">喜剧片</option>
+            <option value="sci-fi">科幻片</option>
+            <option value="drama">剧情片</option>
+            <option value="family">家庭剧情</option>
+            <option value="urban">都市职场</option>
+            <option value="animation">动画青春</option>
+            </select>
+          </label>
+        </div>
+        <p class="filter-empty" data-filter-empty hidden>暂无匹配内容，请调整关键词或筛选条件。</p>
+      </div>
+      <div class="search-summary" data-search-summary></div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="index.html">亚洲精选视频</a>
+        <p>精选亚洲视频内容，覆盖多类型影视相关视频，按片单和热度组织页面信息。</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="ranking.html">热度排行</a>
+        <a href="all.html">全部影片</a>
+      </div>
+      <div class="footer-links footer-category-links">
+          <a href="categories/romance.html">爱情剧</a>
+          <a href="categories/fantasy.html">奇幻玄幻</a>
+          <a href="categories/suspense.html">悬疑惊悚</a>
+          <a href="categories/crime.html">犯罪片</a>
+          <a href="categories/history.html">古装历史</a>
+          <a href="categories/action.html">动作冒险</a>
+          <a href="categories/comedy.html">喜剧片</a>
+          <a href="categories/sci-fi.html">科幻片</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/search-data.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
